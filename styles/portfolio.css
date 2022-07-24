@@ -1,0 +1,123 @@
+/* ФИЛЬТР====================================== */
+.btn-filter {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.btn-filter .item + .item {
+  margin-left: 8px;
+}
+button {
+  padding: 6px 22px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  line-height: 1.62;
+  font-family: inherit;
+  color: var(--title-text-color);
+  background-color: var(--current-color);
+
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+button:hover,
+button:focus {
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+/* КАРТОЧКИ====================================== */
+.section {
+  padding: 94px 0 94px 0;
+}
+.title {
+  margin: 0;
+
+  color: var(--title-text-color);
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  line-height: 2;
+}
+.text {
+  margin: 4px 0 0 0;
+
+  color: var(--primary-text-color);
+  letter-spacing: 0.03em;
+  line-height: 1.88;
+}
+.cards-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.cards-list .item {
+  width: calc((100% - 60px) / 3);
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+.cards-list .item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.cards-list .item:nth-child(3n) {
+  margin-right: 0;
+}
+.cards-list .item:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+.description {
+  border: 1px solid #eeeeee;
+  border-top: none;
+  padding: 20px 0 24px 24px;
+}
+/* ВЫЕЗЖАЮЩИЙ ТЕКСТ*/
+.submenu {
+  position: relative;
+  overflow: hidden;
+}
+.more-text-card {
+  position: absolute;
+  padding: 63px 24px;
+  top: 0;
+  left: 0;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  opacity: 0;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(100%);
+}
+.submenu:hover .more-text-card {
+  transform: translateY(0%);
+  opacity: 0.9;
+  background: var(--accent-color);
+}
+.card-img-wrap {
+  position: relative;
+  overflow: hidden;
+}
+/* ФОН ДЛЯ ВЫЕЗЖАЮЩЕГО ТЕКСТА*/
+/* .submenu {
+  display: inline-block;
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: var(--accent-color);
+  opacity: 0;
+}
+.submenu:hover {
+  opacity: 0.9;
+  
+} */
+
+/* ПОДВАЛ====================================== */
+.page-footer {
+  margin-top: 94px;
+}

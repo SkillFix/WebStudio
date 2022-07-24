@@ -63,20 +63,20 @@
 
           <!-- ФИЛЬТЕР====================================== -->
           <ul class="btn-filter">
-            <li class="item"><button type="button">Все</button></li>
-            <li class="item"><button type="button">Веб-сайты</button></li>
-            <li class="item"><button type="button">Приложения</button></li>
-            <li class="item"><button type="button">Дизайн</button></li>
-            <li class="item"><button type="button">Маркетинг</button></li>
+            <li class="btn-filter__item"><button type="button">Все</button></li>
+            <li class="btn-filter__item"><button type="button">Веб-сайты</button></li>
+            <li class="btn-filter__item"><button type="button">Приложения</button></li>
+            <li class="btn-filter__item"><button type="button">Дизайн</button></li>
+            <li class="btn-filter__item"><button type="button">Маркетинг</button></li>
           </ul>
         </div>
 
         <!-- КАРТОЧКИ====================================== -->
         <div class="container cards">
-          <ul class="cards-list">
-            <li class="item">
+          <ul class="cards__list">
+            <li class="cards__item">
               <a href="">
-                <div class="submenu">
+                <div class="cards__submenu">
                   <div class="card-img-wrap">
                     <img src="./img/portfolio/img.jpg" alt="Веб сайт" width="370" />
                     <p class="more-text-card">
@@ -93,9 +93,9 @@
               </a>
             </li>
 
-            <li class="item">
+            <li class="cards__item">
               <a href="">
-                <div class="submenu">
+                <div class="cards__submenu">
                   <div class="card-img-wrap">
                     <img src="./img/portfolio/img1.jpg" alt="постер" width="370" />
                     <p class="more-text-card">
@@ -112,9 +112,9 @@
               </a>
             </li>
 
-            <li class="item">
+            <li class="cards__item">
               <a href="">
-                <div class="submenu">
+                <div class="cards__submenu">
                   <div class="card-img-wrap">
                     <img src="./img/portfolio/img2.jpg" alt="логотип" width="370" />
                     <p class="more-text-card">
@@ -131,9 +131,9 @@
               </a>
             </li>
 
-            <li class="item">
+            <li class="cards__item">
               <a href="">
-                <div class="submenu">
+                <div class="cards__submenu">
                   <div class="card-img-wrap">
                     <img src="./img/portfolio/img3.jpg" alt="наушники" width="370" />
                     <p class="more-text-card">
@@ -150,9 +150,9 @@
               </a>
             </li>
 
-            <li class="item">
+            <li class="cards__item">
               <a href="">
-                <div class="submenu">
+                <div class="cards__submenu">
                   <div class="card-img-wrap">
                     <img src="./img/portfolio/img4.jpg" alt="две коробочки" width="370" />
                     <p class="more-text-card">
@@ -169,9 +169,9 @@
               </a>
             </li>
 
-            <li class="item">
+            <li class="cards__item">
               <a href="">
-                <div class="submenu">
+                <div class="cards__submenu">
                   <div class="card-img-wrap">
                     <img src="./img/portfolio/img5.jpg" alt="компьютер Мак" width="370" />
                     <p class="more-text-card">
@@ -188,9 +188,9 @@
               </a>
             </li>
 
-            <li class="item">
+            <li class="cards__item">
               <a href="">
-                <div class="submenu">
+                <div class="cards__submenu">
                   <div class="card-img-wrap">
                     <img src="./img/portfolio/img6.jpg" alt="журнал" width="370" />
                     <p class="more-text-card">
@@ -207,9 +207,9 @@
               </a>
             </li>
 
-            <li class="item">
+            <li class="cards__item">
               <a href="">
-                <div class="submenu">
+                <div class="cards__submenu">
                   <div class="card-img-wrap">
                     <img src="./img/portfolio/img7.jpg" alt="этикетка" width="370" />
                     <p class="more-text-card">
@@ -226,9 +226,9 @@
               </a>
             </li>
 
-            <li class="item">
+            <li class="cards__item">
               <a href="">
-                <div class="submenu">
+                <div class="cards__submenu">
                   <div class="card-img-wrap">
                     <img src="./img/portfolio/img8.jpg" alt="макбук" width="370" />
                     <p class="more-text-card">
@@ -251,64 +251,69 @@
 
     <!-- FOOTER====================================== -->
     <footer class="footer">
-      <div class="container footer__main">
-        <div class="left-block">
-          <a href="./index.html" class="logo-footer"> <span class="logo-web">Web</span>Studio </a>
-          <address>
-            <ul class="address-list">
-              <li class="item">
+      <div class="footer__main container">
+        <div class="footer-primary">
+          <a href="./index.html" class="footer__logo">
+            <span class="logo__text-wrapper">Web</span>Studio
+          </a>
+
+          <address class="address">
+            <ul>
+              <li class="address__item">
                 <a
                   href="https://www.google.com/maps/d/u/0/viewer?mid=10uSM3H-mIU3GznYo2szRIEphczw&hl=en_US&ll=50.42732700000001%2C30.538092&z=17"
                   target="_blank"
-                  class="link link-address"
+                  class="address__street"
                   >г. Киев, пр-т Леси Украинки, 26
                 </a>
               </li>
 
-              <li class="item">
-                <a href="mailto:info@example.com" target="_blank" class="link">
+              <li class="address__item">
+                <a href="mailto:info@example.com" target="_blank" class="footer__link">
                   info@example.com
                 </a>
               </li>
 
-              <li class="item">
-                <a href="tel:+380991111111" target="_blank" class="link"> +38 099 111 11 11 </a>
+              <li class="address__item">
+                <a href="tel:+380991111111" target="_blank" class="footer__link">
+                  +38 099 111 11 11
+                </a>
               </li>
             </ul>
           </address>
         </div>
 
-        <div class="footer-social-link">
-          <p class="title">присоединяйтесь</p>
-          <div class="flex-icon-footer">
-            <ul class="social-list-footer list">
-              <li class="list-team">
-                <a href="" class="link-team">
-                  <svg class="svg-team-footer" width="20px" height="20px">
+        <div class="footer-secondary">
+          <p class="footer-secondary__title">присоединяйтесь</p>
+          <div class="footer-secondary__icons">
+            <ul class="footer-secondary__list">
+              <li class="footer-secondary__item">
+                <a href="" class="footer-secondary_link">
+                  <svg class="footer-secondary_svg" width="20px" height="20px">
                     <use href="./img/icons.svg#icon-instagram"></use>
                   </svg>
                 </a>
               </li>
 
-              <li class="list-team">
-                <a href="" class="link-team">
-                  <svg class="svg-team-footer" width="20px" height="20px">
+              <li class="footer-secondary__item">
+                <a href="" class="footer-secondary_link">
+                  <svg class="footer-secondary_svg" width="20px" height="20px">
                     <use href="./img/icons.svg#icon-twitter"></use>
                   </svg>
                 </a>
               </li>
 
-              <li class="list-team">
-                <a href="" class="link-team">
-                  <svg class="svg-team-footer" width="20px" height="20px">
+              <li class="footer-secondary__item">
+                <a href="" class="footer-secondary_link">
+                  <svg class="footer-secondary_svg" width="20px" height="20px">
                     <use href="./img/icons.svg#icon-facebook"></use>
                   </svg>
                 </a>
               </li>
 
-              <li class="list-team">
-                <a href="" class="link-team">
-                  <svg class="svg-team-footer" width="20px" height="20px">
+              <li class="footer-secondary__item">
+                <a href="" class="footer-secondary_link">
+                  <svg class="footer-secondary_svg" width="20px" height="20px">
                     <use href="./img/icons.svg#icon-linkedin"></use>
                   </svg>
                 </a>
@@ -317,24 +322,22 @@
           </div>
         </div>
 
-        <div class="right-block">
-          <p class="title">Подпишитесь на рассылку</p>
-          <form class="footer-form">
-            <div class="footer-form-field">
-              <input
-                type="email"
-                name="mail"
-                id="mail"
-                class="footer-form-input"
-                placeholder="E-mail"
-              />
-              <button type="button" class="footer-button-telegram">
-                Подписаться
-                <svg class="footer-svg-telegram" width="24px" height="24px">
-                  <use href="./img/icons.svg#icon-telegram"></use>
-                </svg>
-              </button>
-            </div>
+        <div class="footer-third">
+          <p class="footer-third__title">Подпишитесь на рассылку</p>
+          <form class="footer-third__form">
+            <input
+              type="email"
+              name="mail"
+              id="mail"
+              class="footer-third__input"
+              placeholder="E-mail"
+            />
+            <button type="button" class="footer-third__button">
+              Подписаться
+              <svg class="footer-third__svg" width="24px" height="24px">
+                <use href="./img/icons.svg#icon-telegram"></use>
+              </svg>
+            </button>
           </form>
         </div>
       </div>

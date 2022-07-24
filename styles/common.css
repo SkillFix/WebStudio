@@ -207,7 +207,7 @@ textarea {
 }
 
 /* ЛЕВЫЙ ФУТЕР====================================== */
-.logo-footer {
+.footer__logo {
   color: var(--primary-white-color);
   font-family: 'Raleway', sans-serif;
   font-size: 26px;
@@ -226,30 +226,33 @@ address {
   width: 231px;
 }
 
-.address-list .link.link-address {
+.address__street {
   color: var(--primary-white-color);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.address-list .link {
+.footer__link {
   color: rgba(255, 255, 255, 0.6);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.address-list .link:hover,
-.address-list .link:focus {
+.footer__link:hover,
+.footer__link:focus,
+.address__street:hover,
+.address__street:focus {
   color: var(--accent-color);
 }
 
-.address-list .item:not(:last-child) {
+.address__item:not(:last-child) {
   margin-bottom: 9px;
 }
 
-/* СРЕДНИЙ БЛОК ФУТЕР====================================== */
-.footer-social-link {
+/* ФУТЕР СОЦИАЛЬНЫЕ СЕТИ====================================== */
+.footer-secondary {
   margin-left: 70px;
   margin-right: 93px;
 }
-.footer-social-link .title {
+.footer-secondary__title {
   display: flex;
   margin-bottom: 20px;
   padding-top: 12px;
@@ -263,44 +266,20 @@ address {
   line-height: 16px;
   letter-spacing: 0.03em;
 }
-.footer-social-link > .list {
+.footer-secondary__list {
   display: flex;
+  justify-content: center;
 }
-.footer-social-link .item:not(:last-child) {
+.footer-secondary__item:not(:last-child) {
   margin-right: 10px;
 }
-.footer-social-link .link {
-  display: inline-block;
-  width: 44px;
-  height: 44px;
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
-  justify-content: center;
-  align-items: center;
-}
-.footer-social-link .item {
-  display: flex;
-  background-repeat: no-repeat;
-  background-position: center;
-  justify-content: center;
-  align-items: center;
-}
-
-/* ССЫЛКИ ИКОНКИ СОЦСЕТЕЙ ФУТЕР====================================== */
-.flex-icon-footer .list {
-  display: flex;
-  justify-content: center;
-}
-.flex-icon-footer .list-team:not(:last-child) {
-  margin-right: 10px;
-}
-.social-list-footer .list-team {
+.footer-secondary__item {
   border-radius: 50%;
   display: flex;
   box-shadow: none;
   background-color: rgba(255, 255, 255, 0.1);
 }
-.social-list-footer .link-team {
+.footer-secondary_link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -309,20 +288,20 @@ address {
   border-radius: 50%;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.svg-team-footer {
+.footer-secondary_svg {
   fill: var(--primary-white-color);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.link-team:hover,
-.link-team:focus {
+.footer-secondary_link:hover,
+.footer-secondary_link:focus {
   background-color: var(--accent-color);
 }
 
 /* ПРАВЫЙ БЛОК ФУТЕР====================================== */
-.footer-form-field {
+.footer-third__form {
   display: flex;
 }
-.right-block .title {
+.footer-third__title {
   display: flex;
   align-items: baseline;
   margin-bottom: 20px;
@@ -337,7 +316,7 @@ address {
 
   color: var(--primary-white-color);
 }
-.right-block input {
+.footer-third__input {
   padding: 16px 15px;
   width: 358px;
   height: 50px;
@@ -348,7 +327,7 @@ address {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
 }
-.right-block input:placeholder-shown {
+.footer-third__input:placeholder-shown {
   line-height: 1.25px;
 
   display: flex;
@@ -357,7 +336,7 @@ address {
 
   color: rgba(255, 255, 255, 0.6);
 }
-.footer-button-telegram {
+.footer-third__button {
   display: flex;
   align-items: center;
   width: 200px;
@@ -375,7 +354,7 @@ address {
   border-radius: 4px;
   border: none;
 }
-.footer-svg-telegram {
+.footer-third__svg {
   margin-left: 10px;
   fill: var(--primary-white-color);
 }

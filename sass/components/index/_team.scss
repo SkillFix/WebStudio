@@ -48,16 +48,16 @@
     display: flex;
     margin-top: 16px;
     justify-content: center;
-  
-  &__item:not(:last-child) {
+  }
+  .social-networks__item:not(:last-child) {
     margin-right: 10px;
   }
-  &__item {
+  .social-networks__item {
     border-radius: 50%;
     display: flex;
     box-shadow: none;
   }
-  &__link {
+  .social-networks__link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -67,11 +67,11 @@
     border-radius: 50%;
     transition: $cubic-250ms;
   }
-  &__svg {
+  .social-networks__svg {
     fill: $icon-color;
     transition: $cubic-250ms;
   }
-  &__link{
+  .social-networks__link{
   &:hover .social-networks__svg,
   &:focus .social-networks__svg {
     fill: $primary-white-color;
@@ -81,4 +81,3 @@
     background-color: $accent-color;
   }
 }
-  }

@@ -1,0 +1,35 @@
+/* ПОСТОЯННЫЕ КЛИЕНТЫ====================================== */
+.clients__list {
+    display: flex;
+    justify-content: center;
+  }
+  .clients__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+  
+    border: 1px solid $icon-color;
+    border-radius: 4px;
+    color: $icon-color;
+    transition: $cubic-250ms;
+  }
+  .clients__svg {
+    fill: currentColor;
+    transition: $cubic-250ms;
+  }
+  .clients__item:not(:last-child) {
+    margin-right: 30px;
+  }
+  .clients__link{
+    &:hover .clients__svg,
+    &:focus .clients__svg {
+    fill: $accent-color;
+  }
+    &:hover,
+    &:focus {
+    border-color: $accent-color;
+  }
+  }    
+  

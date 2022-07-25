@@ -1,0 +1,62 @@
+// ЗАГОЛОВКИ СЕКЦИЙ===================================================
+@mixin section__title() {
+    font-weight: 700;
+    font-size: 36px;
+    letter-spacing: 0.03em;
+    line-height: 1.2;
+    text-align: center;
+}
+// ШАПКА ================================================================
+@mixin logo() {
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    line-height: 1.2;
+}
+
+@mixin site-nav__link() {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    line-height: 1.2;
+}
+// ФУТЕР ================================================================
+@mixin footer__logo() {
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    line-height: 1.2;
+    }
+  
+    @mixin address() {
+      font-size: 14px;
+      letter-spacing: 0.03em;
+      line-height: 1.7;
+      font-style: normal;
+    }
+  
+    @mixin footer-title() {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14px;
+    letter-spacing: 0.03em;
+    }
+  
+    @mixin footer-third__input() {
+    line-height: 1.25px;
+    letter-spacing: 0.03em;
+    font-size: 16px;
+    }
+     
+    @mixin footer-third__button() {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    }
+    
+  
+  
+    

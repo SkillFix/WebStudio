@@ -444,6 +444,10 @@ address {
 }
 
 /* ЧЕМ МЫ ЗАНИМАЕМСЯ====================================== */
+.activities {
+  padding-top: 0;
+}
+
 .activities__list {
   display: flex;
   flex-wrap: wrap;
@@ -631,6 +635,7 @@ address {
   position: absolute;
   display: flex;
   align-items: center;
+  justify-content: center;
   top: 8px;
   right: 8px;
   width: 30px;

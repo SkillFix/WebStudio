@@ -65,8 +65,15 @@ textarea {
   resize: none;
 }
 
-.section {
-  padding: 94px 0 94px 0;
+@media screen and (min-width: 768px) {
+  .section {
+    padding: 60px 0 60px 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding: 94px 0 94px 0;
+  }
 }
 
 .section__title {
@@ -82,8 +89,18 @@ textarea {
 
 .container {
   margin: 0 auto;
-  width: 1200px;
+  max-width: 450px;
   padding: 0 15px;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 738px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1170px;
+  }
 }
 
 /* HEADER====================================== */
@@ -95,11 +112,29 @@ textarea {
   padding-top: 24px;
   padding-bottom: 25px;
   font-family: "Raleway", sans-serif;
-  font-size: 26px;
   font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
   letter-spacing: 0.03em;
-  line-height: 1.2;
   color: #000000;
+}
+@media screen and (min-width: 768px) {
+  .logo {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-family: "Raleway", sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    line-height: 1.2;
+  }
 }
 
 .logo__text-wrapper {
@@ -187,6 +222,17 @@ textarea {
   color: #2196f3;
 }
 .contact-nav a:hover .contact-nav__icon, .contact-nav a:focus .contact-nav__icon {
+  fill: #2196f3;
+}
+
+.burger {
+  margin-left: auto;
+  border: none;
+  background-color: transparent;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.burger:hover .burger__svg, .burger:focus .burger__svg {
   fill: #2196f3;
 }
 

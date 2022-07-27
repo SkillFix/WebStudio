@@ -1,104 +1,130 @@
 /* HEADER====================================== */
 .header {
-    border-bottom: 1px solid #ececec;
-  }
-  
-  .logo {
-    padding-top: 24px;
-    padding-bottom: 25px;
-  
-    @include logo();
+  border-bottom: 1px solid #ececec;
+}
 
-    color: #000000;
+.logo {
+  padding-top: 24px;
+  padding-bottom: 25px;
+
+  @include logo-mobile();
+
+  @media screen and (min-width: $tablet) {
+    @include logo-mobile();
   }
-  
-  .logo__text-wrapper {
-    color: $accent-color;
+
+  @media screen and (min-width: $desktop) {
+    @include logo-desktop();
   }
-  .contact-nav__link {
-    display: flex;
-    align-items: center;
-    transition: $cubic-250ms;
+
+  color: #000000;
+}
+
+.logo__text-wrapper {
+  color: $accent-color;
+}
+.contact-nav__link {
+  display: flex;
+  align-items: center;
+  transition: $cubic-250ms;
+}
+.contact-nav__icon {
+  margin-right: 10px;
+  transition: $cubic-250ms;
+  &:hover,
+  &:focus {
+    fill: $accent-color;
   }
-  .contact-nav__icon {
-    margin-right: 10px;
-    transition: $cubic-250ms;
-    &:hover,
-    &:focus {
-    fill: $accent-color;}
-  }
-  /* MAIN NAV====================================== */
-  .header__nav {
-    display: flex;
-    align-items: center;
-  }
-  
-  /* SAIT NAV====================================== */
-  .site-nav {
-    display: flex;
-    margin-left: 93px;
-  
+}
+
+/* MAIN NAV====================================== */
+.header__nav {
+  display: flex;
+  align-items: center;
+}
+
+/* SAIT NAV====================================== */
+.site-nav {
+  display: flex;
+  margin-left: 93px;
+
   &__item + &__item {
     margin-left: 50px;
   }
 }
-  .site-nav__link {
-    display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    position: relative;
-  
-    color: $title-text-color;
-  
-    @include site-nav__link();
+.site-nav__link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  position: relative;
 
-    transition: $cubic-250ms;
-    &:hover,
-    &:focus {
-    color: $accent-color;
-  }}
-  
-  .site-nav__link--current {
-    color: $accent-color;
+  color: $title-text-color;
 
-    &::after {
+  @include site-nav__link();
+
+  transition: $cubic-250ms;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.site-nav__link--current {
+  color: $accent-color;
+
+  &::after {
     position: absolute;
     content: '';
     width: 100%;
     height: 4px;
     bottom: -1px;
     left: 0;
-  
+
     background-color: $accent-color;
     border-radius: 2px;
-  
+
     transition: $cubic-250ms;
-  }}
-  /* КОНТАКТЫ НАВИГАЦИИ====================================== */
-  .contact-nav {
-    display: flex;
-    margin-left: auto;
-  
+  }
+}
+/* КОНТАКТЫ НАВИГАЦИИ====================================== */
+.contact-nav {
+  display: flex;
+  margin-left: auto;
+
   &__item + &__item {
     margin-left: 50px;
   }
 }
-  
-  .contact-nav a {
-    padding-top: 32px;
-    padding-bottom: 32px;
-  
-    color: $primary-text-color;
-  
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 1.2;
-  
-    &:hover,
-    &:focus {
+
+.contact-nav a {
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: $primary-text-color;
+
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.2;
+
+  &:hover,
+  &:focus {
     color: $accent-color;
   }
-    &:hover .contact-nav__icon,
-    &:focus .contact-nav__icon {
+  &:hover .contact-nav__icon,
+  &:focus .contact-nav__icon {
     fill: $accent-color;
-  }}
+  }
+}
+
+.burger {
+  margin-left: auto;
+
+  border: none;
+  background-color: transparent;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  &:hover .burger__svg,
+  &:focus .burger__svg {
+    fill: $accent-color;
+  }
+}

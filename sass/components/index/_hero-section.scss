@@ -1,41 +1,51 @@
+/* СЕКЦИЯ ЗАГОЛОВОК С ФОНОМ====================================== */
+.hero {
+  padding: 118px 0;
 
+  height: 400px;
+  @media screen and (min-width: $tablet) {
+  }
 
-  /* СЕКЦИЯ ЗАГОЛОВОК С ФОНОМ====================================== */
-  .hero {
-    text-align: center;
+  @media screen and (min-width: $desktop) {
     padding: 200px 0;
     max-width: 1600px;
     height: 600px;
-    margin-left: auto;
-    margin-right: auto;
+  }
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../img/hero.jpg);
-    background-color: #2f303a;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../img/hero.jpg);
+  background-color: #2f303a;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.hero__title {
+  margin: 0 0 30px 0;
+  padding: 0;
+
+  @include hero__title-mobile;
+
+  @media screen and (min-width: $desktop) {
+    @include hero__title-decktop;
   }
-  .hero__title {
-    margin: 0 0 30px 0;
-    padding: 0;
-  
-    @include hero__title();
-    
-    color: $primary-white-color;
-  }
-  .hero__button {
-    padding: 10px 32px;
-    min-width: 200px;
-    
-    @include hero__button();
-  
-    color: $primary-white-color;
-    background-color: $accent-color;
-    cursor: pointer;
-  
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    border: none;
-  }
+
+  color: $primary-white-color;
+}
+.hero__button {
+  padding: 10px 32px;
+  min-width: 200px;
+
+  @include hero__button();
+
+  color: $primary-white-color;
+  background-color: $accent-color;
+  cursor: pointer;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+}

@@ -1,5 +1,8 @@
 /* РЕШЕНИЯ ДЛЯ БИЗНЕСА====================================== */
 .business__list {
+  gap: 30px;
+  display: grid;
+
   @media screen and (min-width: $tablet) {
     display: flex;
     flex-wrap: wrap;
@@ -10,20 +13,10 @@
 
   @media screen and (min-width: $tablet) {
     width: calc((100% - 60px) / 2);
-    margin-bottom: 30px;
-    margin-right: 30px;
-    &:nth-child(2n) {
-      margin-right: 0;
-    }
   }
   @media screen and (min-width: $desktop) {
     width: calc((100% - 90px) / 4);
-    &:nth-child(2n) {
-      margin-right: 30px;
-    }
-    &:nth-child(4n) {
-      margin-right: 0;
-    }
+    gap: 0;
   }
 }
 .business__icons {

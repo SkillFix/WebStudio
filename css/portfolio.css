@@ -473,6 +473,13 @@ address {
 .menu-site__item:not(:last-child) {
   margin-bottom: 32px;
 }
+.menu-site a {
+  color: #212121;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.menu-site a:hover, .menu-site a:focus {
+  color: #2196f3;
+}
 
 .menu-contact {
   margin-left: 40px;

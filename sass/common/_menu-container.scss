@@ -25,10 +25,19 @@
   margin-top: 48px;
   margin-left: 40px;
   margin-bottom: 306px;
+
   @include menu-site();
 
   &__item:not(:last-child) {
     margin-bottom: 32px;
+  }
+  a {
+    color: $title-text-color;
+    transition: $cubic-250ms;
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
   }
 }
 

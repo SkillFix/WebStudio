@@ -1,8 +1,8 @@
 .menu {
-  display: none;
   transform: translateY(-100%);
   transition: transform linear 250ms;
   position: fixed;
+  display: none;
 
   top: 0;
   left: 0;

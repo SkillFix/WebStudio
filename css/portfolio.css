@@ -260,7 +260,6 @@ textarea {
   background-color: transparent;
   padding-top: 16px;
   padding-bottom: 16px;
-  z-index: 999;
 }
 @media screen and (min-width: 768px) {
   .burger {
@@ -442,10 +441,10 @@ address {
 }
 
 .menu {
-  display: none;
   transform: translateY(-100%);
   transition: transform linear 250ms;
   position: fixed;
+  display: none;
   top: 0;
   left: 0;
   width: 100%;

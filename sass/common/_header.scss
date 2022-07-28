@@ -1,6 +1,7 @@
 /* HEADER====================================== */
 .header {
   border-bottom: 1px solid #ececec;
+  position: relative;
 }
 
 .logo {
@@ -43,9 +44,15 @@
 .site-nav {
   display: flex;
   margin-left: 93px;
-
   &__item + &__item {
     margin-left: 50px;
+  }
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  @media screen and (max-width: 1199px) {
+    margin-left: 88px;
   }
 }
 .site-nav__link {
@@ -89,13 +96,26 @@
 
   &__item + &__item {
     margin-left: 50px;
+    @media screen and (max-width: 1199px) {
+      margin-left: 0;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  @media screen and (max-width: 1199px) {
+    flex-direction: column;
+    padding-top: 21px;
+    padding-bottom: 21px;
+    gap: 10px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }
 
 .contact-nav a {
-  padding-top: 32px;
-  padding-bottom: 32px;
-
   color: $primary-text-color;
 
   font-size: 14px;
@@ -113,14 +133,29 @@
 }
 
 .burger {
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
   margin-left: auto;
+  display: flex;
+  align-items: center;
 
   border: none;
   background-color: transparent;
   padding-top: 16px;
   padding-bottom: 16px;
+  z-index: 999;
   &:hover .burger__svg,
   &:focus .burger__svg {
     fill: $accent-color;
+  }
+  & .icon-close-menu {
+    display: none;
+  }
+  &.is-open .icon-close-menu {
+    display: block;
+  }
+  &.is-open .icon-menu {
+    display: none;
   }
 }

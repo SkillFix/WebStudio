@@ -62,7 +62,9 @@
 .menu-soc {
   display: flex;
   margin-left: 40px;
-
+  & a {
+    color: $accent-color;
+  }
   @include menu-soc();
   color: $accent-color;
   &__item:not(:last-child) {

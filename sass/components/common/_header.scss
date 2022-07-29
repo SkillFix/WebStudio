@@ -7,11 +7,11 @@
 .logo {
   padding-top: 24px;
   padding-bottom: 25px;
-
-  @include logo-mobile();
+  @include font(700, 24px, 1.16, 0.03em);
+  font-family: $font-logo;
 
   @media screen and (min-width: $desktop) {
-    @include logo-desktop();
+    @include font(700, 26px, 1.2, 0.03em);
   }
 
   color: #000000;
@@ -63,7 +63,7 @@
 
   color: $title-text-color;
 
-  @include site-nav__link();
+  @include font(500, 14px, 1.2, 0.02em);
 
   transition: $cubic-250ms;
   &:hover,

@@ -1,13 +1,13 @@
 @import './utils/variables';
 @import './utils/visually-hidden';
 @import './utils/reset-style';
-@import './base/fonts/common_fonts';
+@import './utils/fonts';
 @import './base/fonts/index__fonts';
 @import './base/fonts/modal__fonts';
 @import './utils/section-container';
-@import './common/header';
-@import './common/menu-container';
-@import './common/footer';
+@import './components/common/header';
+@import './components/common/menu-container';
+@import './components/common/footer';
 @import './components/index/hero-section';
 @import './components/index/business';
 @import './components/index/activities';

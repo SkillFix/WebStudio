@@ -1,11 +1,11 @@
 @import './utils/variables';
 @import './utils/visually-hidden';
 @import './utils/reset-style';
-@import './base/fonts/common_fonts';
+@import './utils/fonts';
 @import './base/fonts/portfolio__fonts';
 @import './utils/section-container';
-@import './common/header';
-@import './common/footer';
-@import './common/menu-container';
+@import './components/common/header';
+@import './components/common/footer';
+@import './components/common/menu-container';
 @import './components/portfolio/btn-filter';
 @import './components/portfolio/cards';

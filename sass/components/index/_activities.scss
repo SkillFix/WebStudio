@@ -8,17 +8,11 @@
 }
 .activities__list {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   padding-top: 0;
+  gap: 30px;
 }
-.activities__item {
-  width: calc((100% - 60px) / 3);
-  margin-right: 30px;
 
-  &:nth-child(3n) {
-    margin-right: 0;
-  }
-}
 .activities__descriprion {
   position: relative;
 }
@@ -28,7 +22,9 @@
   bottom: 0;
   width: 100%;
 
-  @include activities__text();
+  @include font(700, 14px, 1.16, 0.03em);
+  text-align: center;
+  text-transform: uppercase;
 
   background-color: rgba(47, 48, 58, 0.8);
   color: $primary-white-color;

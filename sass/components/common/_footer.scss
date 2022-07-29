@@ -10,17 +10,17 @@
 /* ЛЕВЫЙ ФУТЕР====================================== */
 .footer__logo {
   color: $primary-white-color;
-  font-family: 'Raleway', sans-serif;
-  
-  @include footer__logo();
+  font-family: $font-logo;
+
+  @include font(700, 26px, 1.2, 0.03em);
 }
 
 address {
   margin-top: 20px;
   width: 231px;
 
-  @include address();
-  
+  @include font(400, 14px, 1.7, 0.03em);
+  font-style: normal;
 }
 
 .address__street {
@@ -29,17 +29,17 @@ address {
 
   &:hover,
   &:focus {
-  color: $accent-color;
-}
+    color: $accent-color;
+  }
 }
 .footer__link {
   color: rgba(255, 255, 255, 0.6);
   transition: $cubic-250ms;
 
-&:hover,
-&:focus {
-  color: $accent-color;
-}
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }
 .address__item:not(:last-child) {
   margin-bottom: 9px;
@@ -55,11 +55,11 @@ address {
   align-items: baseline;
   margin-bottom: 20px;
   padding-top: 12px;
-  
-  color: $primary-white-color;
-  
 
-  @include footer-title();
+  color: $primary-white-color;
+
+  @include font(700, 14px, 1.14, 0.03em);
+  text-transform: uppercase;
 }
 .footer-secondary__list {
   display: flex;
@@ -106,7 +106,8 @@ address {
   margin-bottom: 20px;
   padding-top: 12px;
 
-  @include footer-title();
+  @include font(700, 14px, 1.14, 0.03em);
+  text-transform: uppercase;
 
   color: $primary-white-color;
 }
@@ -122,7 +123,7 @@ address {
   border-radius: 4px;
 }
 .footer-third__input:placeholder-shown {
-  @include footer-third__input();
+  @include font(400, 16px, 1.25, 0.03em);
 
   display: flex;
   align-items: center;
@@ -138,7 +139,7 @@ address {
 
   background-color: $accent-color;
 
-  @include footer-third__button();
+  @include font(700, 16px, 1.88, 0.06em);
 
   color: $primary-white-color;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);

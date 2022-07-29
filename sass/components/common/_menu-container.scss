@@ -1,8 +1,11 @@
 .menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
   transform: translateY(-100%);
-  transition: transform linear 250ms;
+  transition: transform linear 250ms cubic-bezier(0.4, 0, 0.2, 1);
   position: fixed;
-  display: none;
 
   top: 0;
   left: 0;
@@ -12,10 +15,10 @@
 
   &.is-open {
     transform: translateY(0);
-    display: block;
-  }
-  @media screen and (min-width: $tablet) {
-    display: none;
+    display: flex;
+    @media screen and (min-width: $tablet) {
+      display: none;
+    }
   }
 }
 
@@ -24,9 +27,8 @@
 .menu-site {
   margin-top: 48px;
   margin-left: 40px;
-  margin-bottom: 306px;
 
-  @include menu-site();
+  @include font(500, 40px, 1.17, 0.02em);
 
   &__item:not(:last-child) {
     margin-bottom: 32px;
@@ -50,22 +52,23 @@
   }
 
   &__tel {
-    @include menu-contact__number();
+    @include font(500, 34px, 1.17, 0.02em);
     color: $accent-color;
   }
 
   &__emeil {
-    @include menu-contact__email();
+    @include font(500, 24px, 1.17, 0.02em);
     color: $primary-text-color;
   }
 }
 .menu-soc {
   display: flex;
   margin-left: 40px;
+  margin-bottom: 48px;
   & a {
     color: $accent-color;
   }
-  @include menu-soc();
+  @include font(500, 18px, 1.22, 0.02em);
   color: $accent-color;
   &__item:not(:last-child) {
     border-right: 1px solid rgba(33, 33, 33, 0.2);
@@ -75,3 +78,4 @@
     padding-left: 10px;
   }
 }
+// КНОПКА В МЕНЮ ============================================================

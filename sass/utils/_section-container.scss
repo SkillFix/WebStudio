@@ -1,8 +1,5 @@
 .section {
   padding: 60px 0 60px 0;
-  @media screen and (min-width: $tablet) {
-    padding: 60px 0 60px 0;
-  }
   @media screen and (min-width: $desktop) {
     padding: 94px 0 94px 0;
   }
@@ -19,11 +16,12 @@
 
 .container {
   margin: 0 auto;
-  max-width: 450px;
+  max-width: 480px;
   padding: 0 15px;
 
   @media screen and (min-width: $tablet) {
-    max-width: 738px;
+    max-width: 768px;
+    // ?????
   }
   @media screen and (min-width: $desktop) {
     max-width: 1170px;

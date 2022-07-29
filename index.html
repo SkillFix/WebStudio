@@ -53,42 +53,6 @@
           </li>
         </ul>
 
-        <div class="menu" id="menu-container" data-menu>
-          <ul class="menu-site">
-            <li class="menu-site__item">
-              <a href="./index.html" class="menu-site__link">Студия</a>
-            </li>
-            <li class="menu-site__item">
-              <a href="./portfolio.html" class="menu-site__link">Портфолио</a>
-            </li>
-            <li class="menu-site__item">
-              <a href="#" class="menu-site__link">Контакты</a>
-            </li>
-          </ul>
-
-          <div>
-            <ul class="menu-contact">
-              <li class="menu-contact__item">
-                <a href="tel:+380961111111" class="menu-contact__link menu-contact__tel"
-                  >+38 096 111 11 11</a
-                >
-              </li>
-              <li class="menu-contact__item">
-                <a href="mailto:info@devstudio.com" class="menu-contact__link menu-contact__emeil"
-                  >info@devstudio.com</a
-                >
-              </li>
-            </ul>
-
-            <ul class="menu-soc">
-              <li class="menu-soc__item"><a href="">Instagram</a></li>
-              <li class="menu-soc__item"><a href="">Twitter</a></li>
-              <li class="menu-soc__item"><a href="">Facebook</a></li>
-              <li class="menu-soc__item"><a href="">LinkedIn</a></li>
-            </ul>
-          </div>
-        </div>
-
         <button
           type="button"
           class="burger is-open"
@@ -184,21 +148,45 @@
           <ul class="activities__list">
             <li class="activities__item">
               <div class="activities__descriprion">
-                <img src="./img/our-activities/box1.jpg" alt="Ноутбук" width="370" />
+                <img
+                  srcset="
+                    ./img/our-activities/box1-370.jpg 370w,
+                    ./img/our-activities/box1-740.jpg 740w
+                  "
+                  src="./img/our-activities/box1-370.jpg"
+                  alt="Ноутбук"
+                  width="370"
+                />
                 <p class="activities__text">Десктопные приложения</p>
               </div>
             </li>
 
             <li class="activities__item">
               <div class="activities__descriprion">
-                <img src="./img/our-activities/box2.jpg" alt="Телефон" width="370" />
+                <img
+                  srcset="
+                    ./img/our-activities/box2-370.jpg 370w,
+                    ./img/our-activities/box2-740.jpg 740w
+                  "
+                  src="./img/our-activities/box2-370.jpg"
+                  alt="Телефон"
+                  width="370"
+                />
                 <p class="activities__text">Мобильные приложения</p>
               </div>
             </li>
 
             <li class="activities__item">
               <div class="activities__descriprion">
-                <img src="./img/our-activities/box3.jpg" alt="Компьютер" width="370" />
+                <img
+                  srcset="
+                    ./img/our-activities/box3-370.jpg 370w,
+                    ./img/our-activities/box3-740.jpg 740w
+                  "
+                  src="./img/our-activities/box3-370.jpg"
+                  alt="Компьютер"
+                  width="370"
+                />
                 <p class="activities__text">Дизайнерские решения</p>
               </div>
             </li>
@@ -526,6 +514,42 @@
         </div>
       </div>
     </footer> -->
+
+    <div class="menu" id="menu-container" data-menu>
+      <ul class="menu-site">
+        <li class="menu-site__item">
+          <a href="./index.html" class="menu-site__link">Студия</a>
+        </li>
+        <li class="menu-site__item">
+          <a href="./portfolio.html" class="menu-site__link">Портфолио</a>
+        </li>
+        <li class="menu-site__item">
+          <a href="#" class="menu-site__link">Контакты</a>
+        </li>
+      </ul>
+
+      <div>
+        <ul class="menu-contact">
+          <li class="menu-contact__item">
+            <a href="tel:+380961111111" class="menu-contact__link menu-contact__tel"
+              >+38 096 111 11 11</a
+            >
+          </li>
+          <li class="menu-contact__item">
+            <a href="mailto:info@devstudio.com" class="menu-contact__link menu-contact__emeil"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+
+        <ul class="menu-soc">
+          <li class="menu-soc__item"><a href="">Instagram</a></li>
+          <li class="menu-soc__item"><a href="">Twitter</a></li>
+          <li class="menu-soc__item"><a href="">Facebook</a></li>
+          <li class="menu-soc__item"><a href="">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
 
     <!-- MODAL====================================== -->
     <div data-modal class="backdrop is-hidden">

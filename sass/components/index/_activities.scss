@@ -11,6 +11,9 @@
   flex-wrap: nowrap;
   padding-top: 0;
   gap: 30px;
+  img {
+    max-width: 100%;
+  }
 }
 
 .activities__descriprion {
@@ -18,11 +21,11 @@
 }
 .activities__text {
   position: absolute;
-  padding: 27px 80px;
+  padding: 27px 0;
   bottom: 0;
   width: 100%;
 
-  @include font(700, 14px, 1.16, 0.03em);
+  @include font(700, 14px, 1.1, 0.03em);
   text-align: center;
   text-transform: uppercase;
 

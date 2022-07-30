@@ -3,15 +3,17 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   gap: 8px;
   @media screen and (max-width: 767px) {
     justify-content: start;
   }
-
-  // &__item + &__item {
-  //   margin-right: 8px;
-  // }
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 50px;
+  }
 }
 button {
   padding: 6px 22px;

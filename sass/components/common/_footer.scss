@@ -9,7 +9,7 @@
   flex-direction: column;
   justify-content: center;
 
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 767px) {
     align-items: center;
   }
   @media screen and (min-width: $tablet) {
@@ -23,7 +23,7 @@
 /* ЛЕВЫЙ ФУТЕР====================================== */
 .footer__logo {
   display: inline-block;
-
+  margin-bottom: 20px;
   text-align: center;
 
   color: $primary-white-color;
@@ -35,7 +35,6 @@
 }
 
 address {
-  margin-top: 20px;
   margin-bottom: 60px;
   width: 231px;
 
@@ -83,8 +82,7 @@ address {
 .footer-secondary__title {
   align-items: baseline;
   margin-bottom: 20px;
-  padding-top: 12px;
-
+  padding-top: 10px;
   color: $primary-white-color;
 
   @include font(700, 14px, 1.14, 0.03em);
@@ -92,6 +90,7 @@ address {
   text-align: center;
   @media screen and (min-width: $desktop) {
     display: flex;
+    padding-top: 12px;
   }
 }
 .footer-secondary__list {
@@ -133,14 +132,7 @@ address {
 }
 
 /* ПРАВЫЙ БЛОК ФУТЕР====================================== */
-.footer-third__form {
-  display: flex;
-  align-items: center;
-  @media screen and (min-width: $desktop) {
-    flex-direction: row;
-  }
-  flex-direction: column;
-}
+
 .footer-third__title {
   text-align: center;
   margin-bottom: 20px;
@@ -154,14 +146,23 @@ address {
     text-align: start;
   }
 }
+.footer-third__form {
+  display: flex;
+  align-items: center;
+  width: calc(100% - 30px);
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: $desktop) {
+    flex-direction: row;
+  }
+}
 .footer-third__input {
   padding: 16px 15px;
-  width: 450px;
+  height: 50px;
   @media screen and (min-width: $desktop) {
     width: 358px;
   }
-
-  height: 50px;
 
   color: $primary-white-color;
   background-color: #2f303a;
@@ -180,23 +181,21 @@ address {
 .footer-third__button {
   display: flex;
   align-items: center;
-
+  height: 50px;
   width: 200px;
   padding: 10px 10px 10px 29px;
-  margin-left: 12px;
   margin-top: 20px;
-  @media screen and (min-width: $desktop) {
-    margin-top: 0;
-  }
-
-  background-color: $accent-color;
 
   @include font(700, 16px, 1.88, 0.06em);
-
+  background-color: $accent-color;
   color: $primary-white-color;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
+  @media screen and (min-width: $desktop) {
+    margin-left: 12px;
+    margin-top: 0;
+  }
 }
 .footer-third__svg {
   margin-left: 10px;

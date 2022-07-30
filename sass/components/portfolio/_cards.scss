@@ -19,7 +19,10 @@
   gap: 30px;
 }
 .cards__item {
-  width: calc((100% - 60px) / 3);
+  width: 100%;
+  @media screen and (min-width: $tablet) {
+    width: calc((100% - 30px) / 2);
+  }
   @media screen and (min-width: $desktop) {
     width: calc((100% - 60px) / 3);
   }

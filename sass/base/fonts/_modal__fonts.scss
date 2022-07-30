@@ -1,22 +1,12 @@
 // СЕКЦИЯ ГЕРОЙ===================================================
-@mixin modal__title() {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.15;
-  letter-spacing: 0.03em;
-}
+
 @mixin textarea() {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
 }
-@mixin form__label() {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
-}
+
 @mixin form__text-agree() {
   font-size: 14px;
   line-height: 1.71px;

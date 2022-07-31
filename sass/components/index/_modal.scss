@@ -145,7 +145,7 @@ textarea {
   align-items: center;
   padding-left: 8.38px;
 
-  @include font(700, 12px, 1.16, 0.03em);
+  @include font(400, 12px, 1.16, 0.03em);
 
   @media screen and (min-width: $desktop) {
     @include font(400, 14px, 1.71, 0.03em);

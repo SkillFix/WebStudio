@@ -22,9 +22,11 @@
 }
 /* ЛЕВЫЙ ФУТЕР====================================== */
 .footer__logo {
-  display: inline-block;
+  display: block;
   margin-bottom: 20px;
-  text-align: center;
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
 
   color: $primary-white-color;
   font-family: $font-logo;
@@ -132,7 +134,9 @@ address {
 }
 
 /* ПРАВЫЙ БЛОК ФУТЕР====================================== */
-
+.footer-third {
+  width: calc(100% - 30px);
+}
 .footer-third__title {
   text-align: center;
   margin-bottom: 20px;
@@ -148,11 +152,9 @@ address {
 }
 .footer-third__form {
   display: flex;
-  align-items: center;
-  width: calc(100% - 30px);
-  display: flex;
   flex-direction: column;
-
+  align-items: center;
+  width: 100%;
   @media screen and (min-width: $desktop) {
     flex-direction: row;
   }
@@ -160,6 +162,7 @@ address {
 .footer-third__input {
   padding: 16px 15px;
   height: 50px;
+  width: 100%;
   @media screen and (min-width: $desktop) {
     width: 358px;
   }

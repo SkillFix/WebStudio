@@ -415,15 +415,19 @@ textarea {
 
 /* ЛЕВЫЙ ФУТЕР====================================== */
 .footer__logo {
-  display: inline-block;
+  display: block;
   margin-bottom: 20px;
-  text-align: center;
   color: #fff;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 1.16;
   letter-spacing: 0.03em;
+}
+@media screen and (max-width: 1199px) {
+  .footer__logo {
+    text-align: center;
+  }
 }
 @media screen and (min-width: 1200px) {
   .footer__logo {
@@ -543,6 +547,10 @@ address {
 }
 
 /* ПРАВЫЙ БЛОК ФУТЕР====================================== */
+.footer-third {
+  width: calc(100% - 30px);
+}
+
 .footer-third__title {
   text-align: center;
   margin-bottom: 20px;
@@ -562,10 +570,9 @@ address {
 
 .footer-third__form {
   display: flex;
-  align-items: center;
-  width: calc(100% - 30px);
-  display: flex;
   flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 @media screen and (min-width: 1200px) {
   .footer-third__form {
@@ -576,6 +583,7 @@ address {
 .footer-third__input {
   padding: 16px 15px;
   height: 50px;
+  width: 100%;
   color: #fff;
   background-color: #2f303a;
   border: 1px solid rgba(255, 255, 255, 0.3);

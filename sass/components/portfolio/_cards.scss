@@ -2,14 +2,14 @@
 .cards__title {
   margin: 0;
 
-  @include cards__title();
+  @include font(700, 18px, 2, 0.06em);
 
   color: $title-text-color;
 }
 .cards__text {
   margin: 4px 0 0 0;
 
-  @include cards__text();
+  @include font(400, 16px, 1.88, 0.03em);
 
   color: $primary-text-color;
 }
@@ -61,8 +61,7 @@
   padding: 63px 24px;
   top: 0;
   left: 0;
-
-  @include more__text-card();
+  @include font(400, 18px, 1.56, 0.03em);
 
   color: #ffffff;
   opacity: 0;

@@ -708,9 +708,9 @@ address {
 .hero__button {
   padding: 10px 32px;
   min-width: 200px;
-  line-height: 1.88;
   font-weight: 700;
   font-size: 16px;
+  line-height: 1.88;
   letter-spacing: 0.06em;
   font-family: inherit;
   color: #fff;
@@ -873,8 +873,8 @@ address {
   text-align: center;
   font-weight: 500;
   font-size: 16px;
-  letter-spacing: 0.03em;
   line-height: 1.2;
+  letter-spacing: 0.03em;
   color: #212121;
 }
 
@@ -882,8 +882,10 @@ address {
   padding: 0;
   margin: 0;
   text-align: center;
-  letter-spacing: 0.03em;
+  font-weight: 400;
+  font-size: 16px;
   line-height: 1.2;
+  letter-spacing: 0.03em;
 }
 
 .team__description {
@@ -1081,16 +1083,18 @@ input {
   margin: 0;
   padding: 11px 42px;
   font-family: inherit;
-  border: 1px solid rgba(33, 33, 33, 0.2);
+  outline: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  border: none;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 textarea {
   padding: 12px 16px;
   height: 120px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
+  outline: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  border: none;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 textarea::placeholder {
@@ -1131,7 +1135,7 @@ textarea::placeholder {
   display: flex;
   align-items: center;
   padding-left: 8.38px;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.03em;
@@ -1139,8 +1143,9 @@ textarea::placeholder {
 }
 @media screen and (min-width: 1200px) {
   .form__text-agree {
+    font-weight: 400;
     font-size: 14px;
-    line-height: 1.71px;
+    line-height: 1.71;
     letter-spacing: 0.03em;
   }
 }

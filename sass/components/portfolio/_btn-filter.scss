@@ -23,7 +23,8 @@ button {
     margin-bottom: 7px;
   }
 
-  @include button();
+  @include font(500, 16px, 1.62, 0.03em);
+  font-family: inherit;
 
   transition: $cubic-250ms;
 

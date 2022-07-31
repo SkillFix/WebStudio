@@ -130,7 +130,16 @@
     fill: $accent-color;
   }
 }
-
+.contact-nav__icon--14px {
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
+}
+.contact-nav__icon--16px {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
 .burger {
   @media screen and (min-width: $tablet) {
     display: none;

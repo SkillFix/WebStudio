@@ -255,6 +255,18 @@ textarea {
   fill: #2196f3;
 }
 
+@media screen and (min-width: 1200px) {
+  .contact-nav__icon--14px {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .contact-nav__icon--16px {
+    display: none;
+  }
+}
+
 .burger {
   margin-left: auto;
   display: flex;

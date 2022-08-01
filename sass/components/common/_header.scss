@@ -95,14 +95,14 @@
   &__item + &__item {
     margin-left: 50px;
 
-    @media screen and (max-width: 1199px) {
+    @media screen and (max-width: 1199.5px) {
       margin-left: 0;
     }
   }
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.5px) {
     display: none;
   }
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 1199.5px) {
     flex-direction: column;
     padding-top: 21px;
     padding-bottom: 21px;
@@ -135,7 +135,7 @@
   }
 }
 .contact-nav__icon--16px {
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 1199.5px) {
     display: none;
   }
 }

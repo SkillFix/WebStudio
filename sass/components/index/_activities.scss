@@ -1,7 +1,12 @@
 /* ЧЕМ МЫ ЗАНИМАЕМСЯ====================================== */
 .activities {
   padding-top: 0;
-
+  &__title {
+    text-align: center;
+    color: $title-text-color;
+    margin-bottom: 50px;
+    @include font(700, 36px, 1.12, 0.03em);
+  }
   @media screen and (max-width: 1199.5px) {
     display: none;
   }

@@ -1,6 +1,18 @@
 /* НАША КОМАНДА====================================== */
 .team {
   background: $current-color;
+  &__title {
+    text-align: center;
+    color: $title-text-color;
+    @media screen and (max-width: 1199.5px) {
+      @include font(700, 28px, 1.17, 0.03em);
+      margin-bottom: 30px;
+    }
+    @media screen and (min-width: $desktop) {
+      @include font(700, 36px, 1.12, 0.03em);
+      margin-bottom: 50px;
+    }
+  }
 }
 .team__list {
   display: flex;

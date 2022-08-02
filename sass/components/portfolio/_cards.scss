@@ -58,10 +58,13 @@
 }
 .more__text-card {
   position: absolute;
-  padding: 63px 24px;
+  padding: 77px 24px;
   top: 0;
   left: 0;
   @include font(400, 18px, 1.56, 0.03em);
+  @media screen and (min-width: $tablet) {
+    padding: 63px 24px;
+  }
 
   color: #ffffff;
   opacity: 0;

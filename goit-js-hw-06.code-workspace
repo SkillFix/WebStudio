@@ -1,18 +1,18 @@
 {
   "folders": [
-	{
-		"path": "..\\goit-js-hw-06"
-	},
-	{
-		"path": "."
-	},
-	{
-		"path": "..\\Learn-JS"
-	},
-	{
-		"path": "..\\goit-js-hw-07"
-	}
-],
+    {
+      "path": "..\\goit-js-hw-06"
+    },
+    {
+      "path": "."
+    },
+    {
+      "path": "..\\Learn-JS"
+    },
+    {
+      "path": "..\\goit-js-hw-07"
+    }
+  ],
   "settings": {
     "liveServer.settings.multiRootWorkspaceName": "goit-markup-hw-08"
   }

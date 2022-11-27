@@ -1,12 +1,12 @@
 {
   "folders": [
-	{
-		"path": "..\\lern-html-css"
-	},
-	{
-		"path": "."
-	}
-],
+    {
+      "path": "..\\lern-html-css"
+    },
+    {
+      "path": "."
+    }
+  ],
   "settings": {
     "liveServer.settings.multiRootWorkspaceName": "goit-markup-hw-07"
   }

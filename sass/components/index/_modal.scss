@@ -27,12 +27,12 @@
   position: absolute;
   top: 50%;
   left: 50%;
+  transform: translate(-50%, -50%);
   width: 450px;
   max-width: 528px;
   height: 609px;
 
   width: calc(100% - 30px);
-  transform: translate(-50%, -50%);
   transition: opacity $cubic-250ms;
 
   border-radius: 4px;
